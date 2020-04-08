@@ -33,7 +33,7 @@ ax3.set_xlabel('Date'); ax3.set_ylabel('Temperature'); ax3.set_title('Two Days P
 ax4.plot(dates, features['friend'])
 ax4.set_xlabel('Date'); ax4.set_ylabel('Temperature'); ax4.set_title('Friend Estimate')
 plt.tight_layout(pad=2)
-plt.savefig('temp_fig.jpg')
+plt.show()
 
 features = pd.get_dummies(features)
 print(features.head(5))
