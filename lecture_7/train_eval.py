@@ -26,7 +26,7 @@ def init_network(model, method='xavier', exclude='embedding', seed=123):
                 pass
 
 
-def train(config, model, train_iter, dev_iter, test_iter,writer):
+def train(config, model, train_iter, dev_iter, test_iter, writer):
     start_time = time.time()
     model.train()
     optimizer = torch.optim.Adam(model.parameters(), lr=config.learning_rate)
